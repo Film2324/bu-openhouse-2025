@@ -1,14 +1,14 @@
 'use client';
 
 import React from 'react';
-
+import Image from 'next/image';
 
 const ProfileCard: React.FC = () => {
 
     const socialLinks = [
         {
             name: 'Email',
-            href: 'mailto:alex.johnson@example.com',
+            href: 'mailto:alex.filmtoy123@gmail.com.com',
             icon: (
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
@@ -18,6 +18,16 @@ const ProfileCard: React.FC = () => {
             color: 'text-red-400 hover:text-red-300'
         },
         //TODO: Add more social links here
+        {
+            name: 'TikTok',
+            href: 'https://tiktok.com/@alexjohnson',
+            icon: (
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M9.101 2.272c.676 4.317 3.706 5.856 6.592 6.07v3.833c-2.11-.15-4.065-.97-5.803-2.286v4.578c0 5.543-6.252 8.84-10.424 4.668C-4.068 15.5.578 9.248 6.121 9.248v3.885c-1.677-.178-3.287.518-3.75 1.986-1.091 3.457 3.064 5.985 5.64 3.408V2.272h1.09Z" clipRule="evenodd" />
+                </svg>
+            ),
+            color: 'text-black hover:text-gray-700'
+        },
     ];
 
     return (
@@ -40,19 +50,22 @@ const ProfileCard: React.FC = () => {
                         {/* Avatar */}
                         <div className="w-36 h-36 mx-auto mb-2 relative">
                             {/* //TODO: Replace with actual profile picture */}
-                            <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-600 rounded-full flex items-center justify-center text-white text-xl sm:text-2xl font-bold shadow-xl">
-                                PIC
-                            </div>                            
+                            <Image
+                                src="/film.jpg"
+                                alt="Profile"
+                                fill
+                                className="rounded-full object-cover"
+                            />
                             <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full animate-ping opacity-20"></div>
                         </div>
 
                         {/* Name and Title */}
                         {/* //TODO: Replace with actual name and title */}
                         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-2">
-                            Name Surname
+                            film
                         </h1>
                         <div className="inline-block px-4 py-2 bg-blue-500/20 backdrop-blur-sm rounded-full text-blue-200 text-sm sm:text-base border border-blue-400/30  mb-1">
-                            Your Role
+                            sterdent
                         </div>
 
                         {/* Contact Information */}
@@ -66,7 +79,7 @@ const ProfileCard: React.FC = () => {
                                     </svg>
                                 </div>
                                 <div>
-                                    <p className="text-white font-medium text-sm sm:text-base">your.email@example.com</p>
+                                    <p className="text-white font-medium text-sm sm:text-base">filmtoy123@gmail.com</p>
                                 </div>
                             </div>
 
@@ -77,7 +90,7 @@ const ProfileCard: React.FC = () => {
                                     </svg>
                                 </div>
                                 <div>
-                                    <p className="text-white font-medium text-sm sm:text-base">+66 (098) 123-4567</p>
+                                    <p className="text-white font-medium text-sm sm:text-base">+66 (065) 913-0300</p>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +100,7 @@ const ProfileCard: React.FC = () => {
                     {/* //TODO: Replace with actual bio */}
                     <div className="max-w-xl mb-2">
                         <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-                            Your brief bio goes here. Share a bit about yourself, your interests, and what you do. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et, voluptatibus dignissimos nobis libero similique reiciendis animi, nisi nihil soluta praesentium,.
+                            สวัสดีคับ ผมชื่อ ฟิลม์ อายุ16
                         </p>
                     </div>
 
